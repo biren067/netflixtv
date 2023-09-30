@@ -1,0 +1,37 @@
+.row{
+margin-left: 20px;
+}
+
+.row__title{
+color: white;
+font-size: 20px;
+font-weight: 500;
+}
+
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+.row__posters{
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+}
+.row__poster_image{
+    padding: 8px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 2px;
+    margin-right: 2px;
+    height: 100px;
+    transition: transform 500ms;
+}
+.row__poster_imageLarge {
+    height: 200px;
+}
+.row__poster_image:hover{
+    transform: scale(1.08);
+}
+.row__poster_imageLarge:hover {
+    transform: scale(1.11);
+}
